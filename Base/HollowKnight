@@ -1,1 +1,22 @@
-Beta
+export DOTNET_ROOT=$(dirname $(realpath $(which dotnet)))
+$ dotnet build
+Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Determining projects to restore...
+  Restored /home/username/dev/Scarab/Scarab.Tests/Scarab.Tests.csproj (in 328 ms).
+  Restored /home/username/dev/Scarab/Scarab/Scarab.csproj (in 349 ms).
+  GenerateAvaloniaResourcesTask -> Root: /home/username/dev/Scarab/Scarab, 3 resources, Output:obj/Debug/net6.0//Avalonia/resources
+  avares -> name:/App.xaml, path: /home/username/dev/Scarab/Scarab/App.xaml, size:535, ItemSpec:App.xaml
+  avares -> name:/Views/MainWindow.xaml, path: /home/username/dev/Scarab/Scarab/Views/MainWindow.xaml, size:298, ItemSpec:Views/MainWindow.xaml
+  avares -> name:/Assets/omegamaggotprime.ico, path: /home/username/dev/Scarab/Scarab/Assets/omegamaggotprime.ico, size:124504, ItemSpec:Assets/omegamaggotprime.ico
+  Scarab -> /home/username/dev/Scarab/Scarab/bin/Debug/net6.0/Scarab.dll
+  GenerateAvaloniaResourcesTask -> Root: /home/username/dev/Scarab/Scarab.Tests, 0 resources, Output:obj/Debug/net6.0//Avalonia/resources
+  Scarab.Tests -> /home/username/dev/Scarab/Scarab.Tests/bin/Debug/net6.0/Scarab.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.51
+$ ./Scarab/bin/Debug/net6.0/Scarab
